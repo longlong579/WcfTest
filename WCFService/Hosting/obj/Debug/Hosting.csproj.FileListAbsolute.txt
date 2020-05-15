@@ -8,3 +8,6 @@ D:\XHLProjects\WCFService\Hosting\bin\Debug\Service.dll
 D:\XHLProjects\WCFService\Hosting\bin\Debug\Service.Interface.dll
 D:\XHLProjects\WCFService\Hosting\bin\Debug\Service.Interface.pdb
 D:\XHLProjects\WCFService\Hosting\bin\Debug\Service.pdb
+D:\XHLProjects\WcfTest\WCFService\Hosting\bin\Debug\Hosting.exe.config
+D:\XHLProjects\WcfTest\WCFService\Hosting\obj\Debug\Hosting.exe
+D:\XHLProjects\WcfTest\WCFService\Hosting\obj\Debug\Hosting.pdb
