@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 using DirectProcyClient.ServiceReference;
 namespace Client
 {
+    /// <summary>
+    /// 通过添加服务引用直接调用服务，一般不这么做
+    /// </summary>
     class Program
     {
         static void Main(string[] args)

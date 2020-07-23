@@ -54,13 +54,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Service.Interface\Service.Interface.csproj">
-      <Project>{dec984c5-a31b-4aa1-a5b5-007228c69307}</Project>
-      <Name>Service.Interface</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\ServiceReference\CalculatorService.wsdl" />
     <None Include="Service References\ServiceReference\metadata.wsdl" />
     <None Include="Service References\ServiceReference\metadata.xsd">
@@ -87,6 +83,12 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hosting\BatchingHosting.csproj">
+      <Project>{12d1e15a-dbb2-4be6-804a-ae3287313af7}</Project>
+      <Name>BatchingHosting</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

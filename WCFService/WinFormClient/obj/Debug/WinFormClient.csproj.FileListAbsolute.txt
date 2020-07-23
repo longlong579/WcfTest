@@ -1,0 +1,11 @@
+D:\XHLProjects\WcfTest\WCFService\WinFormClient\obj\Debug\WinFormClient.csprojResolveAssemblyReference.cache
+D:\XHLProjects\WcfTest\WCFService\WinFormClient\obj\Debug\WinFormClient.Properties.Resources.resources
+D:\XHLProjects\WcfTest\WCFService\WinFormClient\obj\Debug\WinFormClient.csproj.GenerateResource.Cache
+D:\XHLProjects\WcfTest\WCFService\WinFormClient\bin\Debug\WinFormClient.exe.config
+D:\XHLProjects\WcfTest\WCFService\WinFormClient\bin\Debug\WinFormClient.exe
+D:\XHLProjects\WcfTest\WCFService\WinFormClient\bin\Debug\WinFormClient.pdb
+D:\XHLProjects\WcfTest\WCFService\WinFormClient\bin\Debug\Artech.BatchingHosting.exe
+D:\XHLProjects\WcfTest\WCFService\WinFormClient\obj\Debug\WinFormClient.exe
+D:\XHLProjects\WcfTest\WCFService\WinFormClient\obj\Debug\WinFormClient.pdb
+D:\XHLProjects\WcfTest\WCFService\WinFormClient\obj\Debug\WinFormClient.WinFormClient.resources
+D:\XHLProjects\WcfTest\WCFService\WinFormClient\bin\Debug\Artech.BatchingHosting.pdb

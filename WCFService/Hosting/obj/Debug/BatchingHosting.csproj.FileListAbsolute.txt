@@ -1,0 +1,6 @@
+D:\XHLProjects\WcfTest\WCFService\Hosting\bin\Debug\Artech.BatchingHosting.exe.config
+D:\XHLProjects\WcfTest\WCFService\Hosting\bin\Debug\Artech.BatchingHosting.exe
+D:\XHLProjects\WcfTest\WCFService\Hosting\bin\Debug\Artech.BatchingHosting.pdb
+D:\XHLProjects\WcfTest\WCFService\Hosting\obj\Debug\Artech.BatchingHosting.exe
+D:\XHLProjects\WcfTest\WCFService\Hosting\obj\Debug\Artech.BatchingHosting.pdb
+D:\XHLProjects\WcfTest\WCFService\Hosting\obj\Debug\BatchingHosting.csprojResolveAssemblyReference.cache

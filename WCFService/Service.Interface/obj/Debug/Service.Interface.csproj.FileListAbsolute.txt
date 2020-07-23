@@ -1,4 +1,0 @@
-D:\XHLProjects\WCFService\Service.Interface\bin\Debug\Service.Interface.dll
-D:\XHLProjects\WCFService\Service.Interface\bin\Debug\Service.Interface.pdb
-D:\XHLProjects\WCFService\Service.Interface\obj\Debug\Service.Interface.dll
-D:\XHLProjects\WCFService\Service.Interface\obj\Debug\Service.Interface.pdb
