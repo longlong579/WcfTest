@@ -1,0 +1,9 @@
+Debug/
+obj/
+bin/
+.vs/
+*.bak
+*.user
+*.dll
+*.pdb
+
