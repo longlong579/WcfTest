@@ -1,8 +1,0 @@
-D:\XHLProjects\WCFService\Client\bin\Debug\Client.exe.config
-D:\XHLProjects\WCFService\Client\bin\Debug\Client.exe
-D:\XHLProjects\WCFService\Client\bin\Debug\Client.pdb
-D:\XHLProjects\WCFService\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
-D:\XHLProjects\WCFService\Client\obj\Debug\Client.exe
-D:\XHLProjects\WCFService\Client\obj\Debug\Client.pdb
-D:\XHLProjects\WCFService\Client\bin\Debug\Service.Interface.dll
-D:\XHLProjects\WCFService\Client\bin\Debug\Service.Interface.pdb

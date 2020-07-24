@@ -23,6 +23,7 @@ namespace Artech.BatchingHosting.ErrorHandle
 {
     /// <summary> 
     /// WCF服务端异常处理器 
+    /// 可以提供多个异常处理器做不同的操作，最简单就一个处理器，不区分异常类型（如此类所示）
     /// </summary> 
     public class WCF_ExceptionHandler : IErrorHandler
     {
@@ -33,6 +34,7 @@ namespace Artech.BatchingHosting.ErrorHandle
         /// </summary> 
         /// <param name="ex">ex</param> 
         /// <returns>true</returns> 
+        /// 返回True,代表不中止通道
         public bool HandleError(Exception ex)
         {
             return true;
@@ -50,7 +52,7 @@ namespace Artech.BatchingHosting.ErrorHandle
             //在这里处理服务端的消息，将消息写入服务端的日志 
             // 
             string err = string.Format("调用WCF接口 '{0}' 出错", ex.TargetSite.Name);
-            var newEx = new FaultException(err);
+            var newEx = new FaultException(err);//直接指定错误信息（服务的调用者只能得到一段自定义的错误消息文本）
 
             MessageFault msgFault = newEx.CreateMessageFault();
             msg = Message.CreateMessage(version, msgFault, newEx.Action);

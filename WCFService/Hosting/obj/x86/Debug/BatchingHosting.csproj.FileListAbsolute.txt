@@ -3,4 +3,3 @@ D:\XHLProjects\WcfTest\WCFService\Hosting\bin\x86\Debug\Artech.BatchingHosting.e
 D:\XHLProjects\WcfTest\WCFService\Hosting\bin\x86\Debug\Artech.BatchingHosting.pdb
 D:\XHLProjects\WcfTest\WCFService\Hosting\obj\x86\Debug\Artech.BatchingHosting.exe
 D:\XHLProjects\WcfTest\WCFService\Hosting\obj\x86\Debug\Artech.BatchingHosting.pdb
-D:\XHLProjects\WcfTest\WCFService\Hosting\obj\x86\Debug\BatchingHosting.csprojResolveAssemblyReference.cache

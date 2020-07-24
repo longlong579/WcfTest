@@ -17,7 +17,7 @@ using System.Threading.Tasks;
 // Function : 
 //
 //========================================================================
-namespace WinFormClient
+namespace WCF.XHL
 {
     public static class ChannelFactories
     {

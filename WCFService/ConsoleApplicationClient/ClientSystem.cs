@@ -14,10 +14,10 @@ using System.Threading.Tasks;
 //
 // Created by : XHL at 2020/5/20 16:33:10
 //
-// Function : 
+// Function : 单次调用Channel通信，并自动关闭,客户端通道管理器
 //
 //========================================================================
-namespace WinFormClient
+namespace WCF.XHL
 {
     public class ClientSystem
     {

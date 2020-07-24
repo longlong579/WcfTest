@@ -37,26 +37,19 @@ namespace Artech.BatchingHosting.ErrorHandle
 
         #region IServiceBehavior Members
 
-        public void Validate(ServiceDescription description,
-        ServiceHostBase serviceHostBase)
+        public void Validate(ServiceDescription description,ServiceHostBase serviceHostBase)
         {
         }
 
-        public void AddBindingParameters(ServiceDescription description,
-        ServiceHostBase serviceHostBase,
-        Collection<ServiceEndpoint> endpoints,
-        BindingParameterCollection parameters)
+        public void AddBindingParameters(ServiceDescription description, ServiceHostBase serviceHostBase, Collection<ServiceEndpoint> endpoints, BindingParameterCollection parameters)
         {
         }
 
-        public void ApplyDispatchBehavior(ServiceDescription description,
-        ServiceHostBase serviceHostBase)
+        public void ApplyDispatchBehavior(ServiceDescription description, ServiceHostBase serviceHostBase)
         {
-            var handler =
-            (IErrorHandler)Activator.CreateInstance(_errorHandlerType);
+            var handler =(IErrorHandler)Activator.CreateInstance(_errorHandlerType);
 
-            foreach (ChannelDispatcherBase dispatcherBase in
-            serviceHostBase.ChannelDispatchers)
+            foreach (ChannelDispatcherBase dispatcherBase in serviceHostBase.ChannelDispatchers)
             {
                 var channelDispatcher = dispatcherBase as ChannelDispatcher;
                 if (channelDispatcher != null)

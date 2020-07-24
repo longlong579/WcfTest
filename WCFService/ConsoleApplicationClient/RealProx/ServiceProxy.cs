@@ -20,7 +20,7 @@ using System.Threading.Tasks;
 //如果客户端用委托模式（WCF全面解析上册第8章节）,分层结构更清晰，但要多编写对应的接口代理，增加代码量，综合考虑，客户端短链接用代理模式
 //
 //========================================================================
-namespace WinFormClient
+namespace WCF.XHL
 {
     public class ServiceProxy<TChannel> : RealProxy
     {
@@ -32,7 +32,7 @@ namespace WinFormClient
             ChannelFactory<TChannel> channelFactory =
                 ChannelFactories.GetFactory<TChannel>(endpointConfigName);
             this.innerChennel = (ICommunicationObject)channelFactory.CreateChannel();
-            Console.WriteLine("创建通道");
+            Console.WriteLine("通道创建成功");
             this.Channel = (TChannel)this.GetTransparentProxy();
         }
 
@@ -45,6 +45,7 @@ namespace WinFormClient
             {
                 object ret = methodCall.MethodBase.Invoke(this.innerChennel,args);
                 this.innerChennel.Close();
+                Console.WriteLine("方法调用结束，通道关闭");
                 return new ReturnMessage(ret, args, methodCall.ArgCount, methodCall.LogicalCallContext, methodCall);
             }
             catch (Exception ex)
@@ -56,7 +57,7 @@ namespace WinFormClient
                 }
                 if (innerEx is TimeoutException || innerEx is CommunicationException)
                 {
-                    Console.WriteLine("关闭通道");
+                    Console.WriteLine("因异常通道关闭");
                     this.innerChennel.Abort();
                 }
                 return new ReturnMessage(innerEx,methodCall);

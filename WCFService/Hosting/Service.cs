@@ -18,6 +18,7 @@ using System.Threading;
 namespace Artech.BatchingHosting
 {
     #region 服务端异常不处理的服务 通道死亡 通道状态为Fault
+    [ServiceBehavior(IncludeExceptionDetailInFaults = true)]//若config中也有配置，则只要有一个为true,结果都是true
     public class CalculatorServiceNoErrorHandle : ICalculatorNoErrorHandle
     {
         public string Test()
@@ -27,14 +28,15 @@ namespace Artech.BatchingHosting
 
         public string TestThrowError()
         {
-            throw new NotImplementedException();
+            int x = 0;
+            return (5 / x).ToString();
         }
     }
     #endregion
 
     #region  服务端异常处理（普通处理） 通道不死亡，可以继续使用
     //IDisposable 用来测试上下文的创建于回收，正式环境无需IDisposable
-    public class CalculatorService : ICalculator,IDisposable
+    public class CalculatorService : ICalculator, IDisposable
     {
         public double Add(double x, double y)
         {
@@ -69,7 +71,7 @@ namespace Artech.BatchingHosting
                 Thread.Sleep(100);
                 return x / y;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 //可以不用错误契约，若要自定义错误类型(屏蔽服务端异常，转换为自定义的具体异常类型)，一定要在方法上加错误契约[FaultContract(typeof(**))]
                 throw new FaultException("除0操作");
@@ -94,7 +96,7 @@ namespace Artech.BatchingHosting
         }
         public CalculatorService()
         {
-            Console.WriteLine("{0}:构造器被调用",Thread.CurrentThread.ManagedThreadId);
+            Console.WriteLine("{0}:构造器被调用", Thread.CurrentThread.ManagedThreadId);
         }
         ~CalculatorService()
         {
@@ -108,7 +110,7 @@ namespace Artech.BatchingHosting
     #endregion
 
     #region ErrorHandle服务 错误高级处理
-    [ServiceBehavior(IncludeExceptionDetailInFaults = true)]
+   // [ServiceBehavior(IncludeExceptionDetailInFaults =true)]
     [WCF_ExceptionBehaviour(typeof(WCF_ExceptionHandler))]
     public class ErrorHandleService : IErrorHandleTest
     {

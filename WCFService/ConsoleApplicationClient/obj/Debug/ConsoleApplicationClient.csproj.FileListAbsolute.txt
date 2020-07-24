@@ -5,3 +5,4 @@ D:\XHLProjects\WcfTest\WCFService\ConsoleApplicationClient\bin\Debug\Artech.Batc
 D:\XHLProjects\WcfTest\WCFService\ConsoleApplicationClient\bin\Debug\Artech.BatchingHosting.pdb
 D:\XHLProjects\WcfTest\WCFService\ConsoleApplicationClient\obj\Debug\ConsoleApplicationClient.exe
 D:\XHLProjects\WcfTest\WCFService\ConsoleApplicationClient\obj\Debug\ConsoleApplicationClient.pdb
+D:\XHLProjects\WcfTest\WCFService\ConsoleApplicationClient\obj\Debug\ConsoleApplicationClient.csprojResolveAssemblyReference.cache
