@@ -28,34 +28,6 @@ namespace Hosting
                 hosts.Open();
                 Console.Read();
             }
-            //    Task.Factory.StartNew(() =>
-            //    {
-            //        using (ServiceHost host = new ServiceHost(typeof(CalculatorService)))
-            //        {
-            //            host.Opened += delegate
-            //            {
-            //                Console.WriteLine("CalculatorService 已经启动，按任意键中止服务！");
-            //            };
-            //            host.Open();
-            //            PrintServerInfo(host);
-            //            Console.Read();
-            //        }
-            //    });
-            //    Task.Factory.StartNew(() =>
-            //    {
-            //        using (ServiceHost host = new ServiceHost(typeof(FileDealServer)))
-            //        {
-            //            host.Opened += delegate
-            //            {
-            //                Console.WriteLine("FileDealService 已经启动，按任意键中止服务！");
-            //            };
-            //            host.Open();
-            //            PrintServerInfo(host);
-            //            Console.Read();
-            //        }
-            //    });
-
-            //    Console.Read();
         }
 
         static int i = 0;

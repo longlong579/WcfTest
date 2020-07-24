@@ -4,6 +4,9 @@ using System.ComponentModel;
 
 namespace Artech.BatchingHosting.Configuration
 {
+    /// <summary>
+    /// 多服务启动 获取Congifg 节点artech.batchingHosting中的配置信息（服务）
+    /// </summary>
     public class BatchingHostingSettings: ConfigurationSection
     {
         [ConfigurationProperty("", IsDefaultCollection = true)]
@@ -14,6 +17,7 @@ namespace Artech.BatchingHosting.Configuration
 
         public static BatchingHostingSettings GetSection()
         {
+            //“artech.batchingHosting”为Config中的节点，配置多个服务
             return ConfigurationManager.GetSection("artech.batchingHosting") as BatchingHostingSettings;
         }
     }

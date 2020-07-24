@@ -11,6 +11,5 @@ D:\XHLProjects\WcfTest\WCFService\Client\bin\Debug\DirectProcyClient.exe
 D:\XHLProjects\WcfTest\WCFService\Client\bin\Debug\DirectProcyClient.pdb
 D:\XHLProjects\WcfTest\WCFService\Client\obj\Debug\DirectProcyClient.exe
 D:\XHLProjects\WcfTest\WCFService\Client\obj\Debug\DirectProcyClient.pdb
-D:\XHLProjects\WcfTest\WCFService\Client\obj\Debug\DirectProxyClient.csprojResolveAssemblyReference.cache
 D:\XHLProjects\WcfTest\WCFService\Client\bin\Debug\Artech.BatchingHosting.exe
 D:\XHLProjects\WcfTest\WCFService\Client\bin\Debug\Artech.BatchingHosting.pdb
