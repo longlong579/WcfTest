@@ -35,6 +35,7 @@ namespace Hosting
         public static void PrintServerInfo(ServiceHost host)
         {
             //不同的监听地址，对应不同的分发器，若通过ListernUri指定相同的监听地址，则会对应同一个分发器，（物理地址不一致的情况下）不同的EndPonitDispatcher
+            //只有共享ListenUrl 才会一个ChannelDispatchers对应多个EndpointDispatcher
             foreach (ChannelDispatcher channelDispatcher in host.ChannelDispatchers)
             {
                 Console.WriteLine("ChannelDispatcher {0} ({1})", ++i, channelDispatcher.Listener.Uri);

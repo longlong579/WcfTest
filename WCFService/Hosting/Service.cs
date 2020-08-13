@@ -18,7 +18,8 @@ using System.Threading;
 namespace Artech.BatchingHosting
 {
     #region 服务端异常不处理的服务 通道死亡 通道状态为Fault
-    [ServiceBehavior(IncludeExceptionDetailInFaults = true)]//若config中也有配置，则只要有一个为true,结果都是true
+    [ServiceBehavior(IncludeExceptionDetailInFaults = false)]//若config中也有配置，则只要有一个为true,结果都是true
+    [WCF_ExceptionBehaviour(typeof(WCF_ExceptionHandler))]
     public class CalculatorServiceNoErrorHandle : ICalculatorNoErrorHandle
     {
         public string Test()
